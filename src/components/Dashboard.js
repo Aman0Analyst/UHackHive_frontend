@@ -31,24 +31,24 @@ const data = [
 
 const Dashboard = () => {
   return (
-    <Box sx={{ flexGrow: 1, p: 3, minHeight: '100vh', backgroundColor: '#ffffff', color: '#333333' }}>
+    <Box sx={{ flexGrow: 1, p: 6, minHeight: '100vh', backgroundColor: '#ffffff', color: '#333333' }}>
       <Grid container spacing={3}>
         {/* First Line: Total Sales, Total Users, Satisfaction Rate */}
         <Grid item xs={12} md={4}>
-          <Paper sx={{ p: 2, backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
-            <Typography variant="h6">Total Sales</Typography>
+          <Paper sx={{ p: 2, mt: 2, backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
+            <Typography variant="h6">Cost Saved</Typography>
             <Typography variant="h4">$173,000</Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Paper sx={{ p: 2, backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
-            <Typography variant="h6">Total Users</Typography>
+          <Paper sx={{ p: 2, mt: 2, backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
+            <Typography variant="h6">Total Units Consumed</Typography>
             <Typography variant="h4">2,300</Typography>
           </Paper>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Paper sx={{ p: 2, backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
-            <Typography variant="h6">Satisfaction Rate</Typography>
+          <Paper sx={{ p: 2, mt: 2,  backgroundColor: '#ffcc80', color: '#333333', textAlign: 'center' }}>
+            <Typography variant="h6">Forecast Accuracy</Typography>
             <CircularProgress variant="determinate" value={95} />
           </Paper>
         </Grid>
@@ -63,9 +63,9 @@ const Dashboard = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2, backgroundColor: '#ffe0b2', color: '#333333', textAlign: 'center' }}>
-            <Typography variant="h6">Referral Tracking</Typography>
-            <Typography variant="body1">Invited: 145 people</Typography>
-            <Typography variant="body1">Bonus: 1,465</Typography>
+            <Typography variant="h6">Grids Onboarded</Typography>
+            <Typography variant="body1">Invited: 145 Grids</Typography>
+            <Typography variant="body1">Active: 1,465 Grids</Typography>
           </Paper>
         </Grid>
 
@@ -87,7 +87,7 @@ const Dashboard = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper sx={{ p: 2, backgroundColor: '#ffd54f', color: '#333333', textAlign: 'center' }}>
-            <Typography variant="h6">Forecast Accuracy</Typography>
+            <Typography variant="h6">UV Forecast</Typography>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
